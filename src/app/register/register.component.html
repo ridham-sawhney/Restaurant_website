@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Register</title>
+</head>
+<body>
+    <div class="back">
+        <br><br>
+        <p class="neonText2 hungry" >Are  You  Hungry ?</p><br><br><br>
+        <p class="neonText1 hungry" style="color: orange;font-size: 60px;">Don't  Wait</p>
+       <div class="loginbox">
+       
+           <img [src]="logo" height="100px" width="100px" style="position: absolute;left:165px;opacity: 1; " ><br><br><br><br><br><br>
+           
+       <label class="font1" >Username :</label><br><br>
+       <input type="text" class="ip" [(ngModel)]="username"><br><br>
+       <label class="font1">Password :</label><br><br>
+       <input type="password" class="ip" [(ngModel)]="password"><br><br>
+       <label class="font1">Mobile Number :</label><br><br>
+       <input type="number" class="ip" [(ngModel)]="mobile" required minlength="10"><br><br>
+       <label class="font1"  ngModel email="true">Email :</label><br><br>
+       <input type="email" class="ip" [(ngModel)]="email"><br><br>
+       <button class="button_slide slide_down" (click)="register()"> Register</button>
+
+       <button class="btn2" (click)="signin()">Sign in?</button>
+
+
+       </div>
+    </div>
+   
+    
+    
+
+</body>
+</html>

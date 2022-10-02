@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="back1">
+        <div style="box-sizing: border-box;height: 350px;width: 400px; border: 1px solid orange;border-radius: 50px;position: absolute;top:100px;left:550px;" >
+            <h3 class="font" style="font-size: 30px;color: orange;text-align: center;" >Payment Option</h3>
+            <div style="color:orange; ">
+                <i class="fab fa-cc-paypal" style=" font-size: 40px;"></i>&nbsp;&nbsp;&nbsp;
+                <i class="fab fa-cc-amazon-pay" style=" font-size: 40px;"></i>&nbsp;&nbsp;&nbsp;
+                <i class="fas fa-credit-card" style=" font-size: 40px;"></i>&nbsp;&nbsp;&nbsp;
+                <i class="fab fa-cc-mastercard" style=" font-size: 40px;"></i>&nbsp;&nbsp;&nbsp;
+            </div>
+            <hr style="border-top:2px solid" color="orange">
+            
+                 <button *ngIf=!toogle1 class="button_slide slide_down" (click)="t1()">Debit Card</button> 
+                 <button *ngIf=toogle1 class="button_slide slide_down" (click)="t1()"  style="opacity: 0.5;" >Debit Card</button> 
+                 <br><br><br><br><br>
+                 <button *ngIf=!toogle2 class="button_slide slide_down" (click)="t2()">Credit Card</button> 
+                 <button *ngIf=toogle2 class="button_slide slide_down" (click)="t2()"  style="opacity: 0.5;" >Credit Card</button>
+
+                    <div *ngIf=toogle1>
+                        <div  class ="font" style="font-size: 30px;color: black;box-sizing: border-box;height: 700px;width: 400px; border: 1px solid orange;border-radius: 50px;position: absolute;top:30px;left:500px;background-color: orange;" >
+                            <h3 class="font" style="font-size: 50px;color: black;text-align: center;" >Debit Card</h3>
+                            <label >Name</label><br><input type="text"  class="ip" placeholder="XXXX XXXX XXXX"><br>
+                            <label >Card Number</label><br><input type="text" class="ip" placeholder="XXXX XXXX XXXX"><br>
+                            <label >Expire Date</label><br><input type="text" class="ip" placeholder=" MM/YY"><br>
+                            <label >CVV</label><br><input type="text" class="ip" placeholder="XXX"><br><br><br>
+                            <button class="button_slide slide_down" style="background-color: white;color: orange;position: absolute;left:120px" (click)="pay()">Pay</button>
+                        </div>
+                    </div>
+
+                    <div *ngIf=toogle2>
+                        <div  class ="font" style="font-size: 30px;color: black;box-sizing: border-box;height: 700px;width: 400px; border: 1px solid orange;border-radius: 50px;position: absolute;top:30px;left:500px;background-color: orange;" >
+                            <h3 class="font" style="font-size: 50px;color: black;text-align: center;" >Credit Card</h3>
+                            <label >Name</label><br><input type="text"  class="ip" placeholder="Name"><br>
+                            <label >Card Number</label><br><input type="text" class="ip" placeholder="XXXX XXXX XXXX"><br>
+                            <label >Expire Date</label><br><input type="text" class="ip" placeholder=" MM/YY"><br>
+                            <label >CVV</label><br><input type="text" class="ip" placeholder="XXX"><br><br><br>
+                            <button class="button_slide slide_down" style="background-color: white;color: orange;position: absolute;left:120px"(click)="pay()">Pay</button>
+                        </div>
+                    </div>
+               
+            
+            
+        </div>
+</div>
+
+    </body>
+</html>

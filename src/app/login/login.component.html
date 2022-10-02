@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>LOgin</title>
+</head>
+<body>
+    <div class="back">
+        <p class="neonText2 hungry">Are  You  A</p><br><br><br>
+        <p class="neonText1 hungry" style="color: orange;font-size: 60px;">FOODIE  ?</p>
+       <div class="loginbox">
+           <img [src]="logo" height="100px" width="100px" style="position: absolute;left:165px;opacity: 1; " ><br><br><br><br><br><br>
+       <label class="font1">Username :</label><br><br>
+       <input type="text" class="ip" [(ngModel)]="username"><br><br>
+       <label class="font1">Password :</label><br><br>
+       <input type="password" class="ip" [(ngModel)]="password" required ><br><br>
+       <button class="button_slide slide_down" (click)="login()">Login</button>
+
+       <button class="btn2"  (click)="signup()">Sign Up?</button>
+
+
+       </div>
+    </div>
+   
+    
+    
+
+</body>
+</html>

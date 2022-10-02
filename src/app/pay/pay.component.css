@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Bonheur+Royale&display=swap');
+
+
+.back
+{
+background-image:url("/assets/homebackground2.jpg");
+padding: 100px;
+background-repeat: no-repeat; 
+height: 600px;
+width: 1500px;
+background-size: cover;
+
+}
+
+.back1{
+    background-color: black;
+    position: absolute;
+    height: 4000px;
+    width: 2000px;
+    left:0px;
+}
+
+
+
+
+.loginbox{
+
+    height: 1000px;
+    width:800px;
+    box-sizing: border-box;
+    padding: 10px;
+    background-color: black;
+    color: white;
+    top:30%;
+    left: 30%;
+    opacity: 0.8;
+    position: absolute;
+   
+    
+}
+
+.button_slide {
+    
+      position: absolute;
+      color :white;
+      border-radius: 50px;
+      padding: 18px 30px;
+      display: inline-block;
+      font-family: "Lucida Console", Monaco, monospace;
+      font-size: 20px;
+      letter-spacing: 1px;
+      cursor: pointer;
+      box-shadow: inset 0 0 0 0 orange;
+      -webkit-transition: ease-out 0.4s;
+      -moz-transition: ease-out 0.4s;
+      transition: ease-out 0.4s;
+      background-color: orange;
+      border: none;
+      
+       position: absolute;
+    
+    }
+    
+    .slide_down:hover {
+      box-shadow: inset 0 100px 0 0 orangered;
+    }
+
+    
+        
+    .font1{
+    font-size:20px ;
+    font-family: cursive;
+         
+    color: white;
+    }
+
+.ip
+{
+border:0;
+border-bottom:3px solid;
+border-top: none;
+background: transparent;
+color:white;
+transition:all 0.5s ease-in-out;
+outline: none;
+}
+
+
+.btn2
+{
+background: transparent;
+color: orange;
+font-size: 15px;
+border: none;
+cursor:pointer;
+position: absolute;
+font-family: cursive;
+left:320px;
+top:400px
+}
+
+
+.neonText1 {
+    color: #fff;
+    text-shadow:
+        0 0 7px #fff,
+        0 0 10px #fff,
+        0 0 21px #fff,
+        0 0 42px #0fa,
+        /* 0 0 82px #0fa,
+        0 0 92px #0fa, */
+        0 0 102px #0fa,
+        0 0 151px #0fa;
+  }
+
+  .neonText2 {
+    color: #fff;
+    text-shadow:
+        0 0 7px #fff,
+        0 0 10px #fff,
+        0 0 21px #fff,
+        0 0 42px #fff,
+        0 0 82px #fff,
+        0 0 92px #fff,
+        0 0 102px #fff,
+        0 0 151px #fff;
+  }
+
+  .hungry{
+      position: absolute;
+      font-size: 40px;
+      font-family:cursive;
+  }
+
+
+  .font{
+    font-family: 'Bonheur Royale', cursive; 
+  }
+
+  .navbar {
+    overflow: hidden;
+    background-color: black;
+    position: fixed;
+    top: 0; 
+    width: 100%; 
+  }

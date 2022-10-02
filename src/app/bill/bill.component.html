@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="back1">
+        <button class="button_slide" style="position: absolute;left: 1200px;top:20px;" (click)="pay()">Pay Now</button>
+        <div style="box-sizing: border-box;height: 1000px;width: 500px; border: 1px solid orange;border-radius: 50px;position: absolute;top:200px;left:550px;" >
+            <h3 class="font" style="font-size: 30px;color: orange;text-align: center;" >Mummy's Tummy Section</h3>
+            <h3 style="font-size: 10px;color: orange;text-align: right;" >MH road , Near Command Hospital</h3>
+            <h3 style="font-size: 10px;color: orange;text-align: right;" >Udhampur(182101),J & k</h3>
+            <h3 style="font-size: 10px;color: orange;text-align: right;" >India</h3>
+
+            <hr style="border-top:2px solid" color="orange">
+            <h3 class="font" style="font-size: 30px;color: orange;text-align: center;" >Bill</h3>
+            <p class="font" style="font-size: 20px;color: orange;text-align: center;">Name:{{name}}  ______ Mobile:{{mobile}}</p>
+            
+            <p class="font" style="font-size: 20px;color: orange;text-align: center;">email:{{email}} </p>
+        <hr style="border-top:2px solid" color="orange">
+
+        
+        <table style="border: 2px solid orange;width: 500px;" >
+            <tr style="color: orange;">
+                <td>Name</td><td>Price</td><td>Quantity</td><td>Total Price</td>
+            </tr>
+            <tr style="color: orange;" *ngFor="let vid of veg" >
+                <td>{{vid.name}}</td><td>{{vid.quantity}}</td><td>{{ vid.price}}</td><td>{{ vid.tprice}}</td>
+            </tr>
+            <tr style="color: orange;" *ngFor="let nvid of nonveg" >
+                <td>{{nvid.name}}</td><td>{{nvid.quantity}}</td><td>{{ nvid.price}}</td><td>{{ nvid.tprice}}</td>
+            </tr>
+            <tr style="color: orange;" *ngFor="let bid of beverages" >
+                <td>{{bid.name}}</td><td>{{bid.quantity}}</td><td>{{ bid.price}}</td><td>{{ bid.tprice}}</td>
+            </tr>
+           
+        </table>
+
+        <table style="border: 5px solid orange;width: 500px;">
+            <tr style="color: orange;">
+                <td><strong>Total price:</strong></td><td>{{finalprice}}</td>
+            </tr>
+        </table>
+        <table style="border: 1px solid orange;width: 500px;">
+            <tr style="color: orange;">
+                <td style="text-align: center;"><strong>Thanks For Visit <i class="fas fa-heart"></i></strong>
+            </tr>
+        </table>
+        </div>
+    </div>
+</body>
+</html>

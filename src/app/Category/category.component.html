@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+    <title>Home</title>
+</head>
+
+
+<body>
+<div class="back">
+  <div class="loginbox">
+  </div>
+  <h1 class="neonText1"  style="position: absolute;left: 470px;top:0px;font-family: 'Bonheur Royale', cursive;font-size: 45px;">W a k e U p - I t s - F O O D - O'C l o c k</h1>
+  <button class=" button_slide slide_down" style="position: absolute; top: 10px; font-size: 20px;left: 1350px;" (click)="logout()">Logout</button>
+  <div class="skill-list"  style="position: absolute;left:-5px;top:80px;">
+    <figure class="container" *ngFor="let id of images2" >
+      <img [src]="id.image" style="width:300px;height: 200px;border-radius: 10px;border:1px solid orange;">
+      <div class="overlay">
+        <div class="text">{{id.desc}}</div>
+      </div>
+    </figure>
+  </div>
+
+
+    <div class="container">
+    <img [src]="bev1" style="position: absolute;top:300px;left:-80px; width:300px; height: 200px; border-radius: 1px;border:5px solid orange;">
+    
+    <div class="overlay">
+      <p class="text">{{bev1desc}}</p>
+    </div>
+    </div>
+
+
+    <div class="container">
+      <img [src]="bev2" style="position: absolute;top:300px;left:1100px; width:300px; height: 200px; border-radius: 1px;border:5px solid orange;">
+      
+      <div class="overlay">
+        <p class="text">{{bev2desc}}</p>
+      </div>
+      </div>
+
+
+    <div class="skill-list"  style="position: absolute;left:-5px;top:700px;">
+      <figure class="container" *ngFor="let i of images1" >
+        <img [src]="i.image" style="width:300px;height: 200px;border-radius: 10px;border:1px solid orange;">
+        <div class="overlay">
+          <div class="text">{{i.desc}}</div>
+        </div>
+      </figure>
+    </div>
+    <h1 class="neonText" style="position: absolute; top:300px;left:690px ;color: red;">CHOOSE</h1>
+ <div class="loginbox1" style="position: absolute;left:690px;top:320px;height:40px;width:140px;opacity: 0;border: 1px solid white;border-radius: 10px;"></div>
+<div class="loginbox1" style="position: absolute;left:380px;top:380px;border: 10px solid green;border-radius: 80px;">
+<p class="neonText" style="font-size: 20px;color:greenyellow;text-align: center;">Veg</p>
+</div>
+
+<div class="loginbox1" style="position: absolute;left:680px;top:420px;border: 10px solid skyblue;border-radius: 80px;height:180px;width:180px; ;">
+  <p class="neonText" style="font-size: 20px;color:skyblue;text-align: center">Beverages</p>
+</div>
+
+<div class="loginbox1" style="position: absolute;left:900px;top:380px;border: 10px solid red;border-radius: 80px;">
+  <p class="neonText" style="font-size: 20px;color:red;text-align: center;">Non-Veg</p>
+</div>
+
+
+<div class="loginbox2" style="background-color: green;left:455px;top:455px" ></div>
+<div class="loginbox2" style="background-color: skyblue;left:742px;top:490px;height:60px;width:60px ;" ></div>
+<div class="loginbox2" style="background-color: red;left:980px;top:455px" ></div>
+
+
+  
+<a href="Veg" style="color: black;"><i class="fas fa-carrot"style="font-size:60px;left: 476px;top:470px;position:absolute;"></i></a>
+<a href="Beverages" style="color: black;"><i class="fas fa-glass-cheers " style="font-size:30px;left: 755px;top:510px;position:absolute;"></i></a>
+<a href="NonVeg" style="color: black;"><i class="fas fa-drumstick-bite" style="font-size:50px;left: 1000px;top:480px;position:absolute;"></i>  </a>
+
+
+ </div>
+    
+    
+    
+</body>
+</html>

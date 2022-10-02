@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="back1">
+       
+            <h1 style="left: 1400px;color: orange;">
+             <button   style="background: transparent;color: orange;font-size:20px ;width: 100px;cursor: pointer;" (click)="cart()">CART<i class="fas fa-shopping-cart"></i></button><br>
+             <button style="background: transparent;color: orange;font-size:20px ;width: 100px;"(click)="veg()">Veg<i class="fas fa-carrot"></i></button><br>
+             <button style="background: transparent;color: orange;font-size:20px ;width: 100px;" (click)="nonveg()">Non Veg<i class="fas fa-drumstick-bite"></i></button>
+            
+            </h1>
+        
+          
+    
+    <div style="position: absolute;top:-35px;left :560px;width: 1000px;">
+        
+        <p  class="neonText1 font" style="color: white;font-size: 50px; "> It's  Simple</p>
+        <p  class="neonText1 font" style="color: white;font-size: 70px; position: absolute;top: 50px; "> " Great </p>
+        <p  class="neonText1 font" style="color: orange;font-size: 70px; position: absolute;top: 40px;left:200px "> Ingredients</p>
+        <p  class="neonText1 font" style="color: white;font-size: 50px;position: absolute; left:0px ">Make Great </p>
+        <p  class="neonText1 font" style="color: orange;font-size: 70px;position: absolute; left:250px;top:130px "> Food " </p>
+    
+    </div>
+<div style="position: absolute;width: 5000px;top:250px">
+    <hr size="7" noshade="2" color="orange" >
+    <p  class=" font" style="color: orange;font-size: 40px;position: relative;left: 700px;  ">Beverages</p>
+    <hr size="7" noshade="2" color="orange" >
+
+</div>
+
+<div style="position:absolute;top:380px;width:5000px">
+    <figure *ngFor="let id of beverages">
+        
+        <div style="color: white;">
+            <img align="left" [src]="id.image" height="200px" width="250px" style="border:2px solid orange" ><br>
+            <h2 class=" font" style="font-size:50px; color: white;position: relative;left: 400px;">{{id.name}}</h2>
+            <p class=" font" style="font-size: 40px; color: orange;position: relative;left:750px" >Add Quantity :
+            <input type="number"  placeholder="0"  style="background:transparent; width:70px;border: 2px solid orange;color: orange;" [(ngModel)]="quantity">
+            </p> 
+           
+        </div>
+        
+        <h2 class=" font" style="font-size: 40px; color: orange;position: relative;left: 100px;">Price : Rs. {{id.price}}</h2>
+        <div style="position:relative;left: 1180px;">
+            <button class="font neonText1" style="font-size: 30px;background: transparent;border: 3px solid orange;" (click)="addcart(id.name,quantity,id.price)">Add To Cart</button>
+        </div>
+        <hr size="1" style="border-top:2px dotted;" color="orange" >
+        </figure>
+</div>
+
+
+</div>    
+
+    
+   
+    
+</body>
+</html>
